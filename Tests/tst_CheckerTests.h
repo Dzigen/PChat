@@ -33,39 +33,39 @@ QMap<int, QString> errors_map = {
 };
 
 
-TEST(CheckerTests, BlockTests9)
+TEST(CheckerTests, BlockTests7)
 {
     ASSERT_EQ(check_input_data("", ""), 1);
 }
 
-TEST(CheckerTests, BlockTests10)
+TEST(CheckerTests, BlockTests8)
 {
     ASSERT_EQ(check_input_data("12", "12345"), 2);
 }
 
-TEST(CheckerTests, BlockTests11)
+TEST(CheckerTests, BlockTests9)
 {
     ASSERT_EQ(check_input_data("12345678", "12"), 3);
 }
 
-TEST(CheckerTests, BlockTests12)
+TEST(CheckerTests, BlockTests10)
 {
     ASSERT_EQ(check_input_data("12345678", "1234567891234567890"), 4);
 }
 
-TEST(CheckerTests, BlockTests13)
+TEST(CheckerTests, BlockTests11)
 {
     ASSERT_EQ(check_input_data("123456789123456789123456789123456",
                                "12345678"),
               5);
 }
 
-TEST(CheckerTests, BlockTests14)
+TEST(CheckerTests, BlockTests12)
 {
     ASSERT_EQ(check_input_data("1235#32433", "a#sawqedsaa"), 6);
 }
 
-TEST(CheckerTests, BlockTests15)
+TEST(CheckerTests, BlockTests13)
 {
     ASSERT_EQ(check_input_data("1234$6789", "123456789"), 7);
 }
