@@ -111,7 +111,7 @@ int check_input_data(QString pswrd, QString login)
     if (login.length() < 4) { return 3; }
     if (login.length() > 18) { return 4; }
     if (pswrd.length() > 32) { return 5; }
-    QRegExp rx("^[a-z0-9_-]{3,18}$");
+    QRegExp rx("^[a-z0-9_-]*$");
     if (rx.indexIn(login) == -1) { return 6; }
     if (rx.indexIn(pswrd) == -1) { return 7; }
     return 0;
